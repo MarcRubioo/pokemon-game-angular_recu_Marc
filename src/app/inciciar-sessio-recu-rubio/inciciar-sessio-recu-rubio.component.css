@@ -1,0 +1,15 @@
+form{
+  margin-left: 30%;
+}
+
+.formualri{
+  float: left;
+}
+
+#botoFor{
+  background-color: blue;
+  color: white;
+  margin-left: 5px;
+  height: 40px;
+  width: 60px;
+}

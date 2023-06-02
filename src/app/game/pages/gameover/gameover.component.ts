@@ -16,9 +16,9 @@ export class GameoverComponent implements OnInit {
     return this.playerService.highScore;
   }
 
-  constructor(
-    private playerService: PlayerService
-  ) { }
+  constructor(private playerService: PlayerService) {
+
+  }
 
   ngOnInit(): void {
   }
