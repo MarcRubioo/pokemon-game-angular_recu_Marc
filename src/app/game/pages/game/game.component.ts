@@ -19,6 +19,9 @@ export class GameComponent implements OnInit {
   private _pokemons: Pokemon[] = [];
   private _pokemon!: Pokemon;
 
+  color: any;
+  nom: any;
+
 
 
   get score(): number {
@@ -67,6 +70,23 @@ export class GameComponent implements OnInit {
   onSelect(pokemonName: string) {
     this._pokemonSelected = pokemonName;
     this._selected = true;
+
+    // @ts-ignore
+    const pokemonID = pokemonName;
+
+    fetch(`https://pokeapi.co/api/v2/pokemon-species/${pokemonID}`)
+      .then(response => response.json())
+      .then(data => {
+
+        this.nom = data.name;
+        this.color = data.color.name;
+        console.log(data.name)
+        console.log(data.color.name)
+
+      })
+      .catch(error => {
+        console.error(error);
+      });
 
     if (pokemonName === this._pokemon.name) {
       this.playerService.increasePoints();

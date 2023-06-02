@@ -12,13 +12,15 @@ import { HomeComponent } from './pages/home/home.component';
 import {FormsModule} from "@angular/forms";
 import { InciciarSessioRecuRubioComponent } from './inciciar-sessio-recu-rubio/inciciar-sessio-recu-rubio.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    InciciarSessioRecuRubioComponent
+    InciciarSessioRecuRubioComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -29,6 +31,9 @@ import { InciciarSessioRecuRubioComponent } from './inciciar-sessio-recu-rubio/i
     FormsModule
   ],
   providers: [],
+  exports: [
+
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -27,5 +27,16 @@
                 routerLink="/information/scores">
             SCORES
         </button>
+
      </div>
+  <div id="divHomePokemonQuestionari">
+
+    <form (ngSubmit)="mostrarImatgeComprovarAtac()">
+      <p class="formPok">Pokemon:</p>
+      <input class="formPok" type="text" name="pokemon" id="PokemonTriat">
+      <button id="botoPokForm" class="formPok" type="submit">BUSCAR</button>
+    </form>
+
+    <img [src]="imatge" >
+  </div>
 </div>

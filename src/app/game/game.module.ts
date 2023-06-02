@@ -6,6 +6,7 @@ import { MaterialModule } from '../material/material.module';
 import { GameComponent } from './pages/game/game.component';
 import { GameoverComponent } from './pages/gameover/gameover.component';
 import { PokemonViewComponent } from './components/pokemon-view/pokemon-view.component';
+import { ColorMarcRubiooComponent } from './color-marc-rubioo/color-marc-rubioo.component';
 
 
 
@@ -13,7 +14,8 @@ import { PokemonViewComponent } from './components/pokemon-view/pokemon-view.com
   declarations: [
     GameComponent,
     GameoverComponent,
-    PokemonViewComponent
+    PokemonViewComponent,
+    ColorMarcRubiooComponent
   ],
   imports: [
     CommonModule,

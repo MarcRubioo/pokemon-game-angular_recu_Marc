@@ -1,3 +1,17 @@
 button {
     width: 130px;
 }
+
+.formPok{
+  float: left;
+}
+
+#divHomePokemonQuestionari{
+  margin-top: 40px;
+}
+
+#botoPokForm{
+  margin-left: 5px;
+  background-color: blue;
+  color: white;
+}
